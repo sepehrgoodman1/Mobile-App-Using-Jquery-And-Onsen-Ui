@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="onsenui/css/style.css" />
+    <link rel="stylesheet" href="onsenui/css/onsenui.css" />
+    <link rel="stylesheet" href="onsenui/css/onsen-css-components.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="onsenui/js/onsenui.min.js"></script>
+  </head>
+  <body>
+    <ons-page>
+      <ons-tabbar swipeable>
+        <ons-tab
+          page="tab1.html"
+          label="Home"
+          icon="fa-home , material:md-home"
+          active
+        >
+        </ons-tab>
+        <ons-tab
+          page="tab2.html"
+          label="About Us"
+          icon="fa-store"
+          active-icon="fa-store"
+        >
+        </ons-tab>
+        <ons-tab
+          id="badge-order"
+          page="tab3.html"
+          label="Orders"
+          icon="fa-list-ul"
+          active-icon="fa-list-ul"
+          badge=""
+        >
+        </ons-tab>
+        <ons-tab
+          id="badge-cart"
+          page="tab4.html"
+          label="Cart"
+          icon="fa-shopping-cart"
+          active-icon="fa-shopping-cart"
+          badge=""
+        >
+        </ons-tab>
+      </ons-tabbar>
+    </ons-page>
+
+    <!--                              Home Page                                -->
+    <template id="tab1.html">
+      <ons-page id="Tab1">
+        <ons-pull-hook id="pull-hook"> Pull to refresh </ons-pull-hook>
+        <!--Search-->
+        <p style="text-align: center; margin-top: 10px">
+          <ons-search-input
+            class="Search"
+            placeholder="What are you looking for?"
+            onchange="ons.notification.alert('Searched for: ' + this.value)"
+          ></ons-search-input>
+        </p>
+        <!--/Search-->
+
+        <!--Limited Time Offers-->
+
+        <div class="icon-text">
+          <ons-icon
+            icon="fa-magic"
+            size="20px"
+            class="left"
+            style="margin: 0.5% 5%"
+          ></ons-icon>
+          <div class="box-txt">
+            <div class="h2">Limited time offers</div>
+            <div class="p-icon-text">Enjoy it before it's over</div>
+          </div>
+        </div>
+        <!--/Limited Time Offers-->
+
+        <!--Carousel-->
+        <ons-carousel
+          swipeable
+          auto-scroll
+          overscrollable
+          id="carousel"
+          class="my_carousel"
+          style="margin-bottom: 4%"
+        >
+          <ons-carousel-item class="count-carousel">
+            <img src="images/Slider1.jpg" alt="" class="img-responsive" />
+          </ons-carousel-item>
+          <ons-carousel-item class="count-carousel">
+            <img src="images/Slider2.jpg" alt="" class="img-responsive" />
+          </ons-carousel-item>
+          <ons-carousel-item class="count-carousel">
+            <img src="images/Slider3.jpg" alt="" class="img-responsive" />
+          </ons-carousel-item>
+        </ons-carousel>
+        <!--/Carousel-->
+
+        <!--offers & vouchers-->
+        <div class="icon-text">
+          <ons-icon
+            icon="fa-gift"
+            size="20px"
+            class="left"
+            style="margin: 0.5% 5%"
+          ></ons-icon>
+          <div class="box-txt">
+            <div class="h2">Offers & vouchers</div>
+            <div class="p-icon-text">Get more discount with our promos</div>
+          </div>
+        </div>
+        <!--/offers & vouchers-->
+
+        <!--Off-->
+        <div class="off">
+          <ons-icon
+            icon="fa-percent"
+            size="20px"
+            class="left"
+            style="margin: 2.5% 5%; color: #bb0000"
+          ></ons-icon>
+          <p>10% Off over $15.00 if delivery,collection</p>
+        </div>
+        <!--/Off-->
+
+        <!--categories-->
+        <div class="icon-text">
+          <ons-icon
+            icon="fa-stream"
+            size="20px"
+            class="left"
+            style="margin: 0.5% 5%"
+          ></ons-icon>
+          <div class="box-txt">
+            <div class="h2">Categories</div>
+            <div class="p-icon-text">Choose what you wish</div>
+          </div>
+        </div>
+        <!--/categories-->
+
+        <!--List-->
+        <ons-list>
+          <div class="All-list-home-page">
+            <ons-list-item>
+              <div class="our-list">
+                <div class="left margin-r5 img-list-size" id="push-button">
+                  <img
+                    src="images/Pizza.jpg"
+                    class="img-responsive med-curve"
+                    alt=""
+                  />
+                </div>
+                <div class="food-name">Pizza</div>
+                <div class="food-price">$6.00</div>
+                <div class="add-to-cart">Add To Cart</div>
+              </div>
+            </ons-list-item>
+
+            <ons-list-item>
+              <div class="our-list">
+                <div class="left margin-r5 img-list-size" id="push-button">
+                  <img
+                    src="images/Grilled-Lamb-Burger.jpg"
+                    class="img-responsive med-curve"
+                    alt=""
+                  />
+                </div>
+                <div class="food-name">Beef Burger</div>
+                <div class="food-price">$4.50</div>
+                <div class="add-to-cart">Add To Cart</div>
+              </div>
+            </ons-list-item>
+
+            <ons-list-item>
+              <div class="our-list">
+                <div class="left margin-r5 img-list-size" id="push-button">
+                  <img
+                    src="images/KoftehKebab.jpg"
+                    class="img-responsive med-curve"
+                    alt=""
+                  />
+                </div>
+                <div class="food-name">Kofteh Kebab</div>
+                <div class="food-price">$12.00</div>
+                <div class="add-to-cart">Add To Cart</div>
+              </div>
+            </ons-list-item>
+
+            <ons-list-item>
+              <div class="our-list">
+                <div class="left margin-r5 img-list-size" id="push-button">
+                  <img
+                    src="images/spaghetti-bolognese.jpg"
+                    class="img-responsive med-curve"
+                    alt=""
+                  />
+                </div>
+                <div class="food-name">Pasta</div>
+                <div class="food-price">$3.99</div>
+                <div class="add-to-cart">Add To Cart</div>
+              </div>
+            </ons-list-item>
+
+            <ons-list-item>
+              <div class="our-list">
+                <div class="left margin-r5 img-list-size" id="push-button">
+                  <img
+                    src="images/Chciekn-Wings.jpg"
+                    class="img-responsive med-curve"
+                    alt=""
+                  />
+                </div>
+                <div class="food-name">Chicken Wings</div>
+                <div class="food-price">$5.00</div>
+                <div class="add-to-cart">Add To Cart</div>
+              </div>
+            </ons-list-item>
+
+            <ons-list-item>
+              <div class="our-list">
+                <div class="left margin-r5 img-list-size" id="push-button">
+                  <img
+                    src="images/Chciken-Doner.jpg"
+                    class="img-responsive med-curve"
+                    alt=""
+                  />
+                </div>
+                <div class="food-name">Chicken Doner</div>
+                <div class="food-price">$8.00</div>
+                <div class="add-to-cart">Add To Cart</div>
+              </div>
+            </ons-list-item>
+
+            <ons-list-item>
+              <div class="our-list">
+                <div class="left margin-r5 img-list-size" id="push-button">
+                  <img
+                    src="images/Chocolate-Fudge-Cake.jpg"
+                    class="img-responsive med-curve"
+                    alt=""
+                  />
+                </div>
+                <div class="food-name">Dessert</div>
+                <div class="food-price">$1.59</div>
+                <div class="add-to-cart">Add To Cart</div>
+              </div>
+            </ons-list-item>
+          </div>
+        </ons-list>
+
+        <!--/List-->
+      </ons-page>
+    </template>
+    <!--                              /Home Page      color code BB0000                          -->
+
+    <!--                              About-Us Page                                -->
+    <template id="tab2.html">
+      <ons-page id="Tab2">
+        <ons-pull-hook id="pull-hook"> Pull to refresh </ons-pull-hook>
+        <div style="background-color: white; padding-bottom: 20%">
+          <div style="width: 100%; position: relative">
+            <div class="logo">
+              <img
+                src="images/LogoSepehrPizza.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <img src="images/pizza-About.jpg" class="img-responsive" alt="" />
+          </div>
+          <div class="about-us">
+            <div class="res-Name">Sepehr Pizza</div>
+            <div>Iranian, Pizza</div>
+            <div class="med-bold">Opening hours</div>
+            <div class="list-openingH">
+              <div class="list-openingTime">
+                <div class="fl-left">Monday</div>
+                <div class="fl-right">11:30 - 23:50</div>
+              </div>
+              <div class="list-openingTime">
+                <div class="fl-left">Tuesday</div>
+                <div class="fl-right">11:30 - 23:50</div>
+              </div>
+              <div class="list-openingTime">
+                <div class="fl-left">Thursday</div>
+                <div class="fl-right">11:30 - 23:50</div>
+              </div>
+              <div class="list-openingTime">
+                <div class="fl-left">Friday</div>
+                <div class="fl-right">11:30 - 23:50</div>
+              </div>
+              <div class="list-openingTime">
+                <div class="fl-left">Saturday</div>
+                <div class="fl-right">11:30 - 23:50</div>
+              </div>
+              <div class="list-openingTime">
+                <div class="fl-left">Sunday</div>
+                <div class="fl-right">11:30 - 23:50</div>
+              </div>
+              <div class="clear-fix"></div>
+            </div>
+            <div class="med-bold">Address</div>
+            <div>Shiraz , Something Here , P45s65</div>
+          </div>
+          <!--
+            <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.7291971087775!2d52.43179171491382!3d29.756549581987965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fb2196bfce52d39%3A0x81b70459cb4fd0ed!2sPersian%20Gulf%20Shopping%20Center!5e0!3m2!1sen!2snl!4v1633010861872!5m2!1sen!2snl"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          -->
+        </div>
+      </ons-page>
+    </template>
+    <!--                              /About-Us Page                                -->
+
+    <!--                              ORDERS Page                                -->
+    <template id="tab3.html">
+      <ons-page id="Tab3">
+        <ons-pull-hook id="pull-hook"> Pull to refresh </ons-pull-hook>
+        <ons-list>
+          <div id="list-orders-page">
+            <ons-list-item modifier="longdivider" tappable>
+              <div class="left">ID</div>
+              <div class="center price-orders">Price</div>
+              <div class="right status-order">Status</div>
+            </ons-list-item>
+          </div>
+        </ons-list>
+      </ons-page>
+    </template>
+    <!--                              /ORDERS Page                                -->
+
+    <!--                              Cart Page                                -->
+    <template id="tab4.html">
+      <ons-page id="Tab4">
+        <div style="padding-bottom: 20%">
+          <ons-pull-hook id="pull-hook"> Pull to refresh </ons-pull-hook>
+
+          <div class="center med-bold">My Orders</div>
+
+          <ons-list>
+            <div class="All-list-cart" id="hello"></div>
+          </ons-list>
+
+          <div class="continue-shopping">
+            <div class="continue-txt">Continue Shopping</div>
+            <br />
+            <div class="total">Total Price : $0</div>
+            <div class="discount">Discount : $0</div>
+          </div>
+        </div>
+      </ons-page>
+    </template>
+    <!--                              /Cart Page                                -->
+
+    <!--                              dialog                                 -->
+    <template id="dialog.html">
+      <ons-dialog id="my-dialog">
+        <div style="text-align: center; padding: 10px">
+          <p style="margin: 6%">Thank you for your choice</p>
+          <p>
+            <ons-button onclick="hideDialog('my-dialog')">Close</ons-button>
+          </p>
+        </div>
+      </ons-dialog>
+    </template>
+    <!--                              /dialog                                 -->
+    <script src="onsenui/js/jquery.js"></script>
+    <script src="onsenui/js/app.js" async></script>
+  </body>
+</html>

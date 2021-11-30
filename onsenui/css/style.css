@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap');
+*{
+    font-family: 'Scheherazade New', serif,;box-sizing: border-box;padding: 0;margin: 0
+}
+.Search{display: block;position: relative;width: 80%;margin: auto;
+}
+.box-txt{width: 70%; float: left;
+}
+.med-curve{border-radius: 5%;
+}
+.img-responsive{width: 100%;
+}
+.my_carousel{width: 100%; margin: auto; height: auto;
+}
+.img-list-size{width: 28%;
+}
+.left{float: left;
+}
+.dis-block{display: block;
+}
+.icon-text{display: block;width: 100%;margin:4% auto;height: auto;
+    overflow: hidden;
+}
+.off{width: 80%;margin: auto;background-color: white;height: auto;overflow: hidden;padding: 3%;border-radius: 5px;
+}
+.clear-fix{float: none;clear: both;
+}
+div .h2{font-size: 1.15rem; font-weight: bold; margin-top: 0%; display: block;margin-bottom: 2%;
+}
+div.p-icon-text{display: block;opacity: 70%;font-size: 1rem;font-weight: normal;
+}
+.margin-r5{margin-right: 5%;
+}
+.logo{position: absolute;width: 20%;top: 0;right: 0;
+}
+.about-us{margin: 5%;
+}
+.res-Name{font-size: 1.5rem; font-weight: bold;margin: 3% 0;
+}
+.med-bold{font-weight: bold;font-size: 1.2rem;margin: 10% 0;
+}
+.fl-right{float: right;
+}
+.fl-left{float: left;
+}
+.list-openingTime{display: block;height: auto;overflow: hidden;margin: 5% 0;
+}
+.center{text-align: center;
+}
+.img-cart{width: 20%;
+}
+.food-title-cart{ font-weight: bold; position: absolute; top: 0px; left: 24%;font-size: 1.2rem;
+}
+.Box-plus-food-cart{width: 30%; position: absolute; top: 59%; right: 6%;
+}
+.remove-cart{position: absolute; top: 0; right: 3%; opacity: 50%;
+}
+.minus-food-cart{opacity: 50%;
+}
+.count-food-cart{display: inline;font-weight: bold;
+}
+.inside-list-cart{position: relative;width: 100%;
+}
+.price-item-cart{    position: absolute; top: 47px; left: 33%;
+}
+.input-cart{width: 30%; text-align: center; border: none;font-weight: bold;font-size: 1.2rem;
+}
+.continue-shopping{    width: 100%;margin: auto;background-color: #bb0000;height: auto;overflow: hidden;
+    text-align: center;bottom: 0;padding: 3% 5%;color: white;position: fixed;border-radius: 5px;
+    font-weight: bold;
+}
+.continue-txt{font-size: 1.2rem;line-height: 0;margin: 2% auto;
+}
+.discount{ line-height: 0; font-weight: normal; float: right; margin-right: 7%;margin-bottom: 1%;
+}
+.total{font-weight: normal;line-height: 0; margin-bottom: 1%; float: left; margin-left: 7%;
+}
+.add-to-cart{position: absolute;right: 10%;background-color: #bb0000;color: white;padding: 1% 3%;
+    border-radius: 20px;font-size: 0.8rem;border-style: none;top: 33%;
+}
+.food-name{font-weight: bold;position: absolute;top: 22%;left: 25%;
+}
+.food-price{position: absolute;bottom: 22%;left: 25%;
+}
+.addedToCart{background-color: #fe3824;
+}
+.price-orders{    left: 100px;position: absolute;
+}
+.status-order{    position: absolute;right: 20px;
+}
